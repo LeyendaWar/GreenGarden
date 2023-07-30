@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/IvIconLogin"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/smart_farm" />
+
+    <TextView
+        android:id="@+id/TViLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="35dp"
+        android:text="GreenGarden"
+        android:textColor="#72BB53"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TVSingIN"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:text="Sing In"
+        android:textColor="#92D36E"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TVwelcomeLogin"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="25dp"
+        android:text="Hi Green Friend! Nice to see you again."
+        android:textColor="#989EB1"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TVEmailLogin"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Email"
+        android:textColor="#92D36E"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ETEmailLogin"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="example@email.com"
+        android:inputType="text"
+        android:paddingTop="5dp"
+        android:paddingBottom="25dp" />
+
+    <TextView
+        android:id="@+id/TVPasswordLogin"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="Password"
+        android:textColor="#92D36E"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ETPasswordLogin"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ver"
+        android:ems="10"
+        android:hint="*******"
+        android:inputType="text"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp" />
+
+    <Button
+        android:id="@+id/BtnLogin"
+        android:layout_width="286dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#92D36E"
+        android:text="Sing in"
+        android:textStyle="bold"
+        app:cornerRadius="5dp" />
+
+    <TextView
+        android:id="@+id/TVSocialProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="30dp"
+        android:text="or use one of your social profiles"
+        android:textColor="#989EB1"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/LYProfileSocial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="50dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="30dp">
+
+        <Button
+            android:id="@+id/BtnGoogle"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E8E3E3"
+            android:drawableLeft="@drawable/buscar"
+            android:text="Google"
+            android:textColor="#0B0A0A"
+            android:textColorHighlight="#121212"
+            android:textStyle="bold"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/BtnFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#3F51B5"
+            android:drawableLeft="@drawable/social"
+            android:text="Facebook"
+            android:textStyle="bold"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LYResetCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TVResetPass"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="50dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Forgot Password?"
+            android:textColor="#989EB1"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVCreate"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="20dp"
+            android:text="Sing Up"
+            android:textAlignment="textEnd"
+            android:textColor="#92D36E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

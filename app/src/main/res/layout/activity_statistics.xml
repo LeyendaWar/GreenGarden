@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    tools:context=".StatisticsActivity">
+
+    <LinearLayout
+        android:id="@+id/LLExit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="360dp">
+
+        <ImageView
+            android:id="@+id/ExitH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/icons8_salida_32" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/IVCategory2"
+            android:layout_width="142dp"
+            android:layout_height="142dp"
+            app:srcCompat="@drawable/smart_farm" />
+
+        <TextView
+            android:id="@+id/TVCategory2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingTop="60dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="35dp"
+            android:text="GreenGarden"
+            android:textColor="#72BB53"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp"
+        android:paddingTop="5dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/SCAdvice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FF8251"
+            android:drawableLeft="@drawable/investigacion2"
+            android:text="Estadisticas"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLFIS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/BtFecIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#92D36E"
+            android:text="Fecha inicio"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:cornerRadius="5dp" />
+
+        <EditText
+            android:id="@+id/ETDatestarS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/BtFecFS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#92D36E"
+            android:text="Fecha Fin"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:cornerRadius="5dp" />
+
+        <EditText
+            android:id="@+id/ETDateFS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/BTGenerateS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#92D36E"
+            android:gravity="center"
+            android:text="Generar"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/BTNewconS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#92D36E"
+            android:text="Nueva Consulta"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/TLDatoS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/TvRecurS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="RECURSO"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TVCantS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CANTIDAD"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TVValorS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:text="VALOR"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/TVAgua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="AGUA &quot;L&quot;"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TVResAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/TVValorA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/TvAbono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ABONO &quot;Kg&quot;"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TVResAboC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/TVValorAb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/TVTotalS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TVTotalGS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <ImageButton
+            android:id="@+id/IBShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/cuota" />
+
+        <ImageButton
+            android:id="@+id/IBPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/impresora" />
+
+        <ImageButton
+            android:id="@+id/IBpdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/descargar_archivo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayaoutCat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/IVHomePrin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icons8_casa_24" />
+
+        <ImageView
+            android:id="@+id/IVProfileC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icons8_profile_24" />
+
+        <ImageView
+            android:id="@+id/IVSearchC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icons8_profile_24" />
+
+        <ImageView
+            android:id="@+id/IVConfigC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icons8_herramienta_24" />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
